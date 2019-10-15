@@ -9,8 +9,8 @@ function f:Breach(ip,loc)
   
   f.httpCheck = function httpCheck()
     local h = game:GetService("HttpService")
-    if not h then return false
-    return true
+    if not h then return h = "no http service, retard"
+    return h
   end
   
   f.initalizeServer(services)
